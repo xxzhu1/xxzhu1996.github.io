@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet"
+        type="text/css">
+    <!--pingendo-ScriptCode-End-->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #mapid {
+            height: 180px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151460979-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!--map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <style>
+        #mapid {
+            height: 365px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="source\foot-img.png" height="22em"
+                        alt="sma"><br></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html"><b>Home</b></a>
+                    </li>
+                    <li>
+                        <a href="movies.html"><b>Movies</b></a>
+                    </li>
+                    <li class="active">
+                        <a href="studios.html"><b>Studios</b><br></a>
+                    </li>
+                    <li>
+                        <a href="makeyourown.html"><b>Make Your Own</b><br></a>
+                    </li>
+                    <li>
+                        <a href="contacts.html"><b>Contacts</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--navbar-end-->
+    <!--article-->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="https://www.waltdisneystudios.com/static/6b395631a8299ac82d40951ed796cdea/2b5f6/FeaturedMovies.jpg"
+                        class="img-responsive">
+                    <h1 class="text-center">Disney Studios</h1>
+                    <h2 class="text-danger text-default text-left">1923</h2>
+                    <h3 class="text-muted">Walt Disney arrived in California in the summer of 1923 with a lot of
+                        hopes but little else. He had made a cartoon in Kansas City about a little
+                        girl in a cartoon world, called Alice’s Wonderland, and he decided that
+                        he could use it as his “pilot” film to sell a series of these “Alice Comedies”
+                        to a distributor. Soon a distributor in New York, M. J. Winkler, contracted
+                        to distribute the “Alice Comedies” on October 16, 1923, and this date became
+                        the start of the Disney company. Originally known as the Disney Brothers
+                        Cartoon Studio.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="text-danger text-default text-left">1926</h2>
+                    <h3 class="text-muted">The original Disney Studio had been in the back half of a real estate
+                        office on Kingswell Avenue in Hollywood, but soon Walt had enough money
+                        to move next door and rent a whole store for his studio. That small studio
+                        was sufficient for a couple of years, but the company eventually outgrew
+                        it and Walt had to look elsewhere. He found an ideal piece of property
+                        on Hyperion Avenue in Hollywood, built a studio, and in 1926 moved his
+                        staff to the new facility.</h3>
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <br>
+                    <img src="https://www.waltdisneystudios.com/assets/download.jpeg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-danger text-default text-left">1950-70s</h2>
+                    <h3 class="text-muted" contenteditable="true">During the war, Walt Disney concentrated on making
+                        propaganda and training
+                        films for the military. When the war ended, it was difficult for the Disney
+                        Studio to regain its pre-war footing. But Walt opened some new doors by
+                        beginning the award-winning True-Life Adventure series featuring nature
+                        photography of a style never seen before. 1950 saw big successes at Disney-the
+                        first completely live-action film, Treasure Island, the return to classic
+                        animated features with Cinderella and the first Disney television show
+                        at Christmas time.
+                        <br>
+                        <br>In the 1960s came Audio-Animatronics®, pioneered with the Enchanted Tiki
+                        Room at Disneyland and then four shows at the 1964 New York World’s Fair,
+                        and Mary Poppins, perhaps the culmination of all Walt Disney had learned
+                        during his long movie-making career. But the ’60s also brought the end
+                        of an era: Walt Disney died December 15, 1966.Roy O. Disney, who after
+                        Walt’s death oversaw the building and financing of Walt Disney World, died
+                        late in 1971, and for the next decade the Company was led by a team including
+                        Card Walker, Donn Tatum, and Ron Miller — all originally trained by the
+                        Disney brothers.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://thedisneyblog.com/wp-content/uploads/2018/12/cinderella-transform-disney-animation.jpg"
+                        class="img-responsive">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-danger text-default text-left">1988</h2>
+                    <h3 class="text-muted">Filmmaking hit new heights in 1988 as Disney for the first time led Hollywood
+                        studios in box-office gross. Disney animation began reaching even greater
+                        audiences, with The Little Mermaid being topped by Beauty and the Beast
+                        which was in turn topped by Aladdin (1992).</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-danger text-default text-left">1994</h2>
+                    <h3 class="text-muted">The Disney success with animated films continued in 1994 with The Lion
+                        King, which soon became one of the highest-grossing films of all-time.
+                        Toy Story pioneered computer-animation techniques and was followed by a
+                        successful sequel.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2 class="text-danger text-default text-left">2012</h2>
+                    <h3 class="text-muted">In theaters in 2012 were John Carter, Marvel’s The Avengers, Brave, Wreck-It
+                        Ralph, Frankenweenie, and Lincoln (DreamWorks). For nine decades, The Walt
+                        Disney Company continues its mandate of providing quality animations for
+                        the whole world, not only the stop-motion animation.
+                        <br>
+                        <br>#Article from Disney Official Website</h3>
+                </div>
+                <div class="col-md-3">
+                    <br>
+                    <br>
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/rich_frankenweenie_header_mobile_aa62583b.jpeg?region=0,0,640,480"
+                        class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--movie-->
+    <div class="section section-warning" id="movie">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Famous Works</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="2nightmare.html"><img src="source\studios\works\Nightmare-Before-Christmas2.jpg"
+                            class="img-circle img-responsive"></a>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="text-left">The Nightmare Before Christmas
+                        <br>1993</h1>
+                </div>
+                <div class="col-md-2">
+                    <a href="7dog.html"><img src="source\studios\works\frankenweenie.jpg"
+                            class="img-circle img-responsive"></a>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="text-left">Frankenweenie&nbsp;
+                        <br>2012</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--map-->
+    <div class="section section-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Disney Studios</h1>
+                    <h3>Located in Burbank, California, Walt Disney Animation Studios brings imagination
+                        to life through traditional and computer animated films. Our crew is filled
+                        with diverse talent from all around the globe whose passion is to create
+                        beautiful and timeless films through the art of storytelling, the magic
+                        of animation and the science of cutting edge technology.</h3>
+                    <h3 contenteditable="true">
+                        <b>Address:</b>&nbsp;500 S Buena Vista St, Burbank, CA&nbsp;
+                        <br>
+                        <br>
+                        <b>Hours:</b>&nbsp;Open 24 hours
+                        <br>
+                        <br>
+                        <b>Phone:</b>&nbsp;(818) 560-1000&nbsp;</h3>
+                    <h3>
+                        <b>Website:</b>&nbsp;
+                        <a href="https://www.waltdisneystudios.com/" target="_blank">&nbsp;www.waltdisneystudios.com</a>
+                    </h3>
+                    <p></p>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <div id="mapid"></div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <br>
+                    <a class="btn btn-lg btn-warning" href="studios.html">Back</a>
+                    <a class="btn btn-lg btn-warning" href="index.html#three">Back To Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--map script-->
+    <script>
+        var mymap = L.map('mapid').setView([34.1565, -118.32518], 10);
+        var attribution =
+            '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors';
+        var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        var tiles = L.tileLayer(tileUrl, { attribution });
+        tiles.addTo(mymap);
+        var marker = L.marker([34.1565, -118.32518]).addTo(mymap);
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("Laika Studio at " + e.latlng.toString())
+                .openOn(mymap);
+        }
+
+        mymap.on('click', onMapClick);
+    </script>
+    <!--foot-->
+    <footer class="section section-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h1>
+                        <img src="source/foot-img.png" height="22em" alt="sma">
+                    </h1>
+                    <p>The Stop-motion Animation website is designed to serve the Stop-motion
+                        Animation amateurs around the world and to engage more people watch Stop-motion
+                        Animation movie!</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3 contenteditable="true" class="text-left">Stop-motion Animation</h3>
+                    <hr>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="index.html" style="color:#ffffff"><b>Home</b></a>
+                            </li>
+                            <li>
+                                <a href="movies.html" style="color:#ffffff"><b>Movies</b></a>
+                            </li>
+                            <li>
+                                <a href="studios.html" style="color:#ffffff"><b>Studios</b><br></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="makeyourown.html" style="color:#ffffff"><b>Make Your Own</b><br></a>
+                            </li>
+                            <li>
+                                <a href="contacts.html" style="color:#ffffff"><b>Contacts</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-4">
+                    <h3>DECLARATION</h3>
+                    <hr>
+                    <p contenteditable="true">This is a student project (non-commercial) by Xiaoxi Zhu for the course of
+                        the New Media Programme of the School of Journalism and Communication, CUHK. The associated data
+                        of this website are organized by the professional official websites. The website
+                        information is temporarily organized manually, and errata are welcome.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">© Copyright Stop-motion Animation&nbsp;All Rights Reserved <br>Designed
+                        by <a href="https://bootstrapmade.com/" style="color:#ffffff">BootstrapMade</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

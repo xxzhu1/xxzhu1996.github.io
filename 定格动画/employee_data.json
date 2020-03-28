@@ -1,0 +1,214 @@
+{  
+      "data"     :     [
+          {
+            "Name": "Aardman Animation",
+            "established_time": "1972",
+            "country": "England",
+            "url": "http://www.aardman.com/"
+          },
+          {
+            "Name": "Athena Studios",
+            "established_time": "2015",
+            "country": "USA",
+            "url": "https://www.athenastudios.com/"
+          },
+          {
+            "Name": "Beast Animation",
+            "established_time": "2004",
+            "country": "Belgium",
+            "url": "http://www.beastanimation.be/"
+          },
+          {
+            "Name": "Bent",
+            "established_time": "2002",
+            "country": "Portland Oregon",
+            "url": "http://www.bentimagelab.com/"
+          },
+          {
+            "Name": "Bix Pix Entertainment",
+            "established_time": "1998",
+            "country": "Sun Valley, California",
+            "url": "http://www.bixpix.com/"
+          },
+          {
+            "Name": "Bowes Productions Inc.",
+            "established_time": "1988",
+            "country": "Vancouver, BC",
+            "url": "http://www.bowesproductions.com/"
+          },
+          {
+            "Name": "Buddy Systems Studios",
+            "established_time": "2008",
+            "country": "N. Hollywood, California",
+            "url": "http://www.buddysystemstudios.com/Main.html"
+          },
+          {
+            "Name": "Chiodo Bros. Productions, Inc.",
+            "established_time": 1982,
+            "country": "Burbank, California",
+            "url": "http://www.chiodobros.com/"
+          },
+          {
+            "Name": "Clay Animation",
+            "established_time": 2010,
+            "country": "Spain",
+            "url": "http://www.clayanimation.es/"
+          },
+          {
+            "Name": "Clokey Productions / Premavision",
+            "established_time": 1955,
+            "country": "California",
+            "url": "http://www.premavision.com/"
+          },
+          {
+            "Name": "Cuppa Coffee Studios",
+            "established_time": 1992,
+            "country": "Toronto, Ontario",
+            "url": "http://www.cuppacoffee.com/"
+          },
+          {
+            "Name": "Cycho",
+            "established_time": 1943,
+            "country": "Australia",
+            "url": "http://www.cycho.com.au/cycho-site/home.html"
+          },
+          {
+            "Name": "Dwarf",
+            "established_time": 2010,
+            "country": "Japan",
+            "url": "http://www.dw-f.jp/english/index.html"
+          },
+          {
+            "Name": "Flying Gherkin",
+            "established_time": 1993,
+            "country": "Australia",
+            "url": "http://www.flyinggherkin.com/"
+          },
+          {
+            "Name": "Hobby Creative Studio",
+            "established_time": 2013,
+            "country": "Mexico",
+            "url": "http://wearehobby.com/?lang=en"
+          },
+          {
+            "Name": "House Special",
+            "established_time": 2014,
+            "country": "USA",
+            "url": "http://www.housespecial.com/#feature"
+          },
+          {
+            "Name": "Humanimalia Studio",
+            "established_time": 2012,
+            "country": "Mexico",
+            "url": "http://www.facebook.com/HumanimaliaStudio"
+          },
+          {
+            "Name": "John Lemmon Films",
+            "established_time": 1984,
+            "country": "Charlotte, N. Carolina",
+            "url": "http://www.jlf.com/"
+          },
+          {
+            "Name": "La Di Da Films",
+            "established_time": 1985,
+            "country": "Los Angeles",
+            "url": "http://ladidafilms.com/"
+          },
+          {
+            "Name": "Laika / Entertainment",
+            "established_time": 2005,
+            "country": "US",
+            "url": "http://www.laika.com/"
+          },
+          {
+            "Name": "Loose Moose Productions",
+            "established_time": 1994,
+            "country": "London",
+            "url": "http://www.loosemoose.net/"
+          },
+          {
+            "Name": "Mammafotogramma",
+            "established_time": 2008,
+            "country": "Italy",
+            "url": "http://mammafotogramma.com/"
+          },
+          {
+            "Name": "Scopas Medien",
+            "established_time": 1993,
+            "country": "Frankfurt",
+            "url": "http://www.scopas.de/"
+          },
+          {
+            "Name": "Screen Novelties",
+            "established_time": 2003,
+            "country": "Los Angeles",
+            "url": "http://www.screen-novelties.com/"
+          },
+          {
+            "Name": "Se-Ma-For",
+            "established_time": 1947,
+            "country": "Poland",
+            "url": "http://www.se-ma-for.com/"
+          },
+          {
+            "Name": "Springtime Jellyfish",
+            "established_time": 1999,
+            "country": "New York",
+            "url": "http://springtimejellyfish.com/"
+          },
+          {
+            "Name": "Shadowmachine",
+            "established_time": 1999,
+            "country": "Los Angeles",
+            "url": "http://www.shadowmachine.com/"
+          },
+          {
+            "Name": "Stoopid Buddy Stoodios",
+            "established_time": "2005",
+            "country": "Los Angeles",
+            "url": "http://www.leagueofbuddies.com/"
+          },
+          {
+            "Name": "Tippett Studio",
+            "established_time": 1984,
+            "country": " Berkeley, California",
+            "url": "http://www.tippett.com/"
+          },
+          {
+            "Name": "Trikk 17",
+            "established_time": 2001,
+            "country": "Hamburg, Germany",
+            "url": "http://www.trikk17.com/"
+          },
+          {
+            "Name": "Walt Disney",
+            "established_time": 1923,
+            "country": "USA",
+            "url": "https://www.disneyanimation.com/"
+          },
+          {
+            "Name": "Weirdough Animation",
+            "established_time": 1956,
+            "country": "Japan",
+            "url": "http://www.weirdoughmationfilms.com/"
+          },
+          {
+            "Name": "Wild Brain",
+            "established_time": 2006,
+            "country": "Sherman Oaks, California",
+            "url": "http://www.wildbrain.com/"
+          },
+          {
+            "Name": "Wind-up Pictures",
+            "established_time": 2012,
+            "country": "Toronto",
+            "url": "http://www.windup.ca/"
+          },
+          {
+            "Name": "Zhengdian Cartoon",
+            "established_time": 2006,
+            "country": "China",
+            "url": "http://zhengdiancartoon.com/"
+          }
+        ]  
+ }  

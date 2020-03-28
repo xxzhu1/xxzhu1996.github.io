@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet"
+        type="text/css">
+    <!--pingendo-ScriptCode-End-->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #mapid {
+            height: 180px;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151460979-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!--map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <style>
+        #mapid {
+            height: 365px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="source\foot-img.png" height="22em"
+                        alt="sma"><br></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html"><b>Home</b></a>
+                    </li>
+                    <li>
+                        <a href="movies.html"><b>Movies</b></a>
+                    </li>
+                    <li class="active">
+                        <a href="studios.html"><b>Studios</b><br></a>
+                    </li>
+                    <li>
+                        <a href="makeyourown.html"><b>Make Your Own</b><br></a>
+                    </li>
+                    <li>
+                        <a href="contacts.html"><b>Contacts</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--navbar-end-->
+    <!--article-->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets//img/banners/banner-atrium.jpg"
+                        class="img-responsive">
+                    <h1 class="text-center">Aardman Animations</h1>
+                    <h2 class="text-center text-danger text-default">1972</h2>
+                    <h3 class="text-muted" contenteditable="true">Aardman's adeptness of engaging audiences with
+                        compelling stories told
+                        through animation has earned the company a deserved worldwide reputation.
+                        Their award-winning work produces a unique brand of independent film alongside
+                        work for broadcast and advertising spots. The studio has had ten Oscar®
+                        nominations and has won four.
+                        <br>
+                        <br>Peter Lord and David Sproxton began their animating partnership at school.
+                        In 1972 they registered the name Aardman Animations. After graduating,
+                        they moved to Bristol in 1976 where they produced their first professional
+                        production, creating Morph for the children’s program 'Take Hart'.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/morph-feet.jpg"
+                        class="img-responsive">
+                </div>
+                <div class="col-md-10">
+                    <h3 class="text-muted">From the start Peter and David were interested in developing an adult
+                        audience for model animation. Conversation Pieces commissioned by Channel
+                        Four Television in 1982 enabled the pair to develop its innovative technique
+                        of animating puppet characters to real-life conversations. With films like
+                        Early Bird (set in a local radio station) Aardman demonstrated that real
+                        people could be characterised with insight, humour and sensitivity.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h3 class="text-muted" contenteditable="true">Peter and David met Nick Park at the National Film and
+                        Television School
+                        when he was working on his student film A Grand Day Out. He joined Aardman
+                        full time in 1985.</h3>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/thumb-heads.jpg"
+                        class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <h2 class="text-center text-danger text-default">1995</h2>
+                    <h3 class="text-muted" contenteditable="true">In 1995 Aardman produced Nick Park's third Oscar
+                        winning film A Close
+                        Shave. An immediate success, it confirmed the studio’s reputation as well
+                        as establishing Wallace and Gromit as household names. In 1996 the studio
+                        produced Peter Lord's Oscar nominated 11 minute short film, Wat's Pig (for
+                        Channel Four) as well as a children's series based on Morph, The Morph
+                        Files.</h3>
+                    <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/mouths.jpg"
+                        class="img-responsive">
+                    <h2 class="text-center text-danger text-default">2000</h2>
+                    <h3 class="text-muted">Chicken Run was Aardman’s first full-length theatrical feature film to
+                        be funded by DreamWorks. Directed by both Peter Lord and Nick Park it was
+                        released in June 2000 in the US and UK to excellent reviews and outstanding
+                        box office receipts. Chicken Run has grossed over $220M at the worldwide
+                        box office.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center text-danger text-default">2007</h2>
+                    <h3 class="text-muted" contenteditable="true">Flushed Away, the studio's first CG film was released
+                        worldwide by DreamWorks
+                        in November 2006, it was nominated for a BAFTA in 2007.&nbsp;Aardman's
+                        television series, Shaun the Sheep debuted on BBC1 and CBBC in March 2007.
+                        Inspired by Nick Park’s 1995 Academy Award winning short film A Close Shave,
+                        the series has been sold worldwide. Also in 2007 Aardman produced a US
+                        version of Creature Comforts.</h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/flushed-away.jpg"
+                        class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history/woi.png"
+                        class="img-responsive">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-center text-danger text-default">2010</h2>
+                    <h3 class="text-muted">In 2010 a new six part TV series - Wallace and Gromit’s World of Invention
+                        was produced and broadcast on BBC One – an accompanying website and game
+                        were developed, extending the viewer’s experience across multiple platforms
+                        and went on to win the company its first BAFTA for New Media.
+                        <br>
+                        <br>2010 also saw the launch of Shaun the Sheep spin off game Home Sheep Home,
+                        which proved a huge success and reached nearly 70 million plays within
+                        its first year and won numerous industry awards.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left">
+                    <h2 class="text-center text-danger text-default">2013</h2>
+                    <img src="https://www.aardman.com/wp/wp-content/themes/rex/assets/img/history-shaunitc.png"
+                        class="img-responsive">
+                    <h3 class="text-muted" contenteditable="true">2013 saw over 80 giant Gromit sculptures decorating
+                        the streets of Bristol
+                        for 10 weeks in the Gromit Unleashed trail. This was one of the highest-profile
+                        charity arts-trails the country has ever seen.&nbsp;This unique charity
+                        initiative was replicated with Shaun in the City, where 120 giant Shaun
+                        the Sheep sculptures decorated the streets of London and Bristol in the
+                        Spring and Summer of 2015 which went on to raise over £1,000,000 for children’s
+                        hospitals throughout the UK.
+                        <br>
+                        <br>In April 2013 Aardman announced an exciting new independent filmmaking
+                        partnership with StudioCanal to create the first feature length Shaun the
+                        Sheep movie which saw a worldwide theatrical release in 2015. Following
+                        the success of their first collaboration, Aardman and StudioCanal have
+                        gone into production on a new film from Academy award-winner Nick Park,
+                        a prehistoric adventure titled Early Man which will be released in 2018.</h3>
+                </div>
+                <div class="col-md-12 text-left">
+                    <h3 class="text-muted" contenteditable="true">Aardman continue to develop its attractions and live
+                        events business across
+                        the world, with an ever expanding portfolio of interactive experiences,
+                        theme parks, live shows and exhibitions in development.
+                        <br>
+                        <br>In March 2015, an exhibition celebrating the art of Aardman opened at
+                        Art Ludique in Paris ahead, of the company celebrating its 40th anniversary
+                        in 2016.
+                        <br>
+                        <br>#Article from Walt Disney Official Website</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--movie-->
+    <div class="section section-warning" id="movie">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Famous Works</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="3chicken.html"><img src="source\studios\works\ChickenRun.jpg"
+                            class="img-circle img-responsive"></a>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="text-left">Chicken Run
+                        <br>2000</h1>
+                </div>
+                <div class="col-md-2">
+                    <a href="10sheep.html"><img src="source\studios\works\shaunthesheep.jpg"
+                            class="img-circle img-responsive"></a>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="text-left">Shaun the Sheep Movie
+                        <br>2015</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--map-->
+    <div class="section section-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Aardman Animations</h1>
+                    <h3 contenteditable="true">In July 2016 we opened our doors for a 360 Google tour of our Bristol
+                        HQ at Gas Ferry Road. The tour lets you take a look around our wonderful
+                        building, featuring some of our departments, colourful reception area and
+                        in-house studio.&nbsp;</h3>
+                    <h3 contenteditable="true">
+                        <b>Address:</b>&nbsp;Gas Ferry Rd, Bristol BS1 6UN, United Kingdom&nbsp;
+                        <br>
+                        <br>
+                        <b>Hours:</b>&nbsp;Mon-Fri 9:30AM-6PM / Closed at Weekend
+                        <br>
+                        <br>
+                        <b>Phone:</b>&nbsp;+44 117 984 8485&nbsp;
+                        <br>
+                        <br>
+                        <b>Email:</b>&nbsp;hello@aardman.com&nbsp;</h3>
+                    <p></p>
+                    <h3>
+                        <b>Website:</b>&nbsp;
+                        <a href="http://www.aardman.com/" target="_blank">&nbsp;www.aardman.com</a>
+                    </h3>
+                    <p></p>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <div id="mapid"></div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <br>
+                    <a class="btn btn-lg btn-warning" href="studios.html">Back</a>
+                    <a class="btn btn-lg btn-warning" href="index.html#three">Back To Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--map script-->
+    <script>
+        var mymap = L.map('mapid').setView([51.44769, -2.60767], 10);
+        var attribution =
+            '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors';
+        var tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        var tiles = L.tileLayer(tileUrl, { attribution });
+        tiles.addTo(mymap);
+        var marker = L.marker([51.44769, -2.60767]).addTo(mymap);
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("Aardman Animations Studio at " + e.latlng.toString())
+                .openOn(mymap);
+        }
+
+        mymap.on('click', onMapClick);
+    </script>
+    <!--foot-->
+    <footer class="section section-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h1>
+                        <img src="source/foot-img.png" height="22em" alt="sma">
+                    </h1>
+                    <p>The Stop-motion Animation website is designed to serve the Stop-motion
+                        Animation amateurs around the world and to engage more people watch Stop-motion
+                        Animation movie!</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3 contenteditable="true" class="text-left">Stop-motion Animation</h3>
+                    <hr>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="index.html" style="color:#ffffff"><b>Home</b></a>
+                            </li>
+                            <li>
+                                <a href="movies.html" style="color:#ffffff"><b>Movies</b></a>
+                            </li>
+                            <li>
+                                <a href="studios.html" style="color:#ffffff"><b>Studios</b><br></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="makeyourown.html" style="color:#ffffff"><b>Make Your Own</b><br></a>
+                            </li>
+                            <li>
+                                <a href="contacts.html" style="color:#ffffff"><b>Contacts</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-4">
+                    <h3>DECLARATION</h3>
+                    <hr>
+                    <p contenteditable="true">This is a student project (non-commercial) by Xiaoxi Zhu for the course of
+                        the New Media Programme of the School of Journalism and Communication, CUHK. The associated data
+                        of this website are organized by the professional official websites. The website
+                        information is temporarily organized manually, and errata are welcome.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">© Copyright Stop-motion Animation&nbsp;All Rights Reserved <br>Designed
+                        by <a href="https://bootstrapmade.com/" style="color:#ffffff">BootstrapMade</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

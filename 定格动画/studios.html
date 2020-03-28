@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet"
+        type="text/css">
+    <!--pingendo-ScriptCode-End-->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #mapid {
+            height: 100%;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151460979-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151460979-2', { 'optimize_id': 'GTM-58PDC5K' });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!--table-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css">
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="source\foot-img.png" height="22em"
+                        alt="sma"><br></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html"><b>Home</b></a>
+                    </li>
+                    <li>
+                        <a href="movies.html"><b>Movies</b></a>
+                    </li>
+                    <li class="active">
+                        <a href="studios.html"><b>Studios</b><br></a>
+                    </li>
+                    <li>
+                        <a href="makeyourown.html"><b>Make Your Own</b><br></a>
+                    </li>
+                    <li>
+                        <a href="contacts.html"><b>Contacts</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--navbar-end-->
+    <!--header-->
+    <div class="carousel slide" id="fullcarousel-example" data-interval="false" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="source\headerstudio.jpg">
+                <div class="carousel-caption">
+                    <h1>Studios</h1>
+                    <p>Every Animation Studio has their special style!&nbsp;</p>
+                    <a class="btn btn-lg btn-warning" href="#three">Most Famous</a>&nbsp;
+                    <a class="btn btn-lg btn-warning" href="#table">All Studios in one click</a>&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-end-->
+    <!--three studio-->
+    <div class="section" id="three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Famous Studios</h1>
+                    <p class="text-center"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="laika.html"><img src="source\studios\laika.jpg" class="img-circle img-responsive"></a>
+                    <h3 class="text-center">Laika</h3>
+                </div>
+                <div class="col-md-4">
+                    <a href="disney.html"><img src="source\studios\waltdisney.png"
+                            class="img-circle img-responsive"></a>
+                    <h3 class="text-center">Walt Disney</h3>
+                </div>
+                <div class="col-md-4">
+                    <a href="aardman.html"><img src="source\studios\aardman.png" class="img-circle img-responsive"></a>
+                    <h3 class="text-center">Aardman Animations</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--table-->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="table">
+        <div class="container">
+            <h1 class="text-center">All Stop-motion Animation Studios</h1>
+            <h4 class="text-center text-danger text-default" contenteditable="true">Feel free to visit their websites
+                and find more!</h4>
+            <br>
+            <table id="data-table" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Studio Name</th>
+                        <th>Established_time</th>
+                        <th>Country</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="row">
+                <div class="col-md-12 hidden-xs text-center">
+                    <a class="btn btn-lg btn-warning" href="#map">Check on Map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#data-table').DataTable({
+                "ajax": "employee_data.json",
+                "columns": [
+                    { "data": "Name" },
+                    { "data": "established_time" },
+                    { "data": "country" },
+                    { "data": "url" }
+                ]
+            });
+        });
+    </script>
+    <!--studio end-->
+    <!--map-->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="map">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <h1 class="text-center">Stop-motion Animation Studio Distribution</h1>
+                    <br>
+                    <iframe title="" aria-label="World choropleth map" id="datawrapper-chart-PCrLV"
+                        src="//datawrapper.dwcdn.net/PCrLV/2/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+                    <script type="text/javascript">
+                        !function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();
+                    </script>
+                    <script type="text/javascript">
+                        !function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();
+                    </script>
+                    <script type="text/javascript">
+                        !function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--map end-->
+    <!--foot-->
+    <footer class="section section-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h1>
+                        <img src="source/foot-img.png" height="22em" alt="sma">
+                    </h1>
+                    <p>The Stop-motion Animation website is designed to serve the Stop-motion
+                        Animation amateurs around the world and to engage more people watch Stop-motion
+                        Animation movie!</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3 contenteditable="true" class="text-left">Stop-motion Animation</h3>
+                    <hr>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="index.html" style="color:#ffffff"><b>Home</b></a>
+                            </li>
+                            <li>
+                                <a href="movies.html" style="color:#ffffff"><b>Movies</b></a>
+                            </li>
+                            <li>
+                                <a href="studios.html" style="color:#ffffff"><b>Studios</b><br></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>
+                                <a href="makeyourown.html" style="color:#ffffff"><b>Make Your Own</b><br></a>
+                            </li>
+                            <li>
+                                <a href="contacts.html" style="color:#ffffff"><b>Contacts</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-4">
+                    <h3>DECLARATION</h3>
+                    <hr>
+                    <p contenteditable="true">This is a student project (non-commercial) by Xiaoxi Zhu for the course of
+                        the New Media Programme of the School of Journalism and Communication, CUHK. The associated data
+                        of this website are organized by the professional official websites. The website
+                        information is temporarily organized manually, and errata are welcome.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">© Copyright Stop-motion Animation&nbsp;All Rights Reserved <br>Designed
+                        by <a href="https://bootstrapmade.com/" style="color:#ffffff">BootstrapMade</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
